@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cards de Usuarios</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 20px;
+            }
+
+            #cards {
+                display:flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                
+            }
+            
+            .card {
+                border: 1px solid gray;
+                padding: 25px;
+                width: 250px;
+                cursor:pointer;
+            }
+
+            .card:hover {
+                border: 2px solid blue;
+                background-color: lightblue;
+                box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+            }
+
+            #total {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+
+        
+            </style>
+    </head>
+    <body>
+        <h1>Lista de Usuários</h1>
+        <div id="cards"></div>
+        <div id="total">Total de Usuários: 0</div>
+
+        <script src="cardsUsuarios.js"></script>
+    </body>
+    </html>
